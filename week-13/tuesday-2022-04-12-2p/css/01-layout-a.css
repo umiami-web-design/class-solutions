@@ -1,0 +1,73 @@
+/* 01-layout-a.css */
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+
+  display: grid;
+  grid-template-columns: 300px 2fr;
+  grid-template-areas:
+    "header header"
+    "nav    main"
+    "footer footer";
+  grid-gap: 18px;
+
+  /* max-width: 1080px;   */
+  /* (viewport - 800px) / 2 */
+  /* margin: 0 auto; */
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+  padding: 18px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  padding-left: 18px;
+}
+
+footer p {
+  margin: 0;
+}
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+section {
+  background-color: #ddd;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-column-gap: 18px;
+}
+
+.big-cat {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
