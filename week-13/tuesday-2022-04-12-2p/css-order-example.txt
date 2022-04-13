@@ -1,0 +1,35 @@
+
+/* Type selectors */
+
+body {}
+
+p {}
+
+a {}
+
+li {}
+
+
+/* Type selectors - structural */
+
+header {}
+
+nav {}
+
+footer {}
+
+footer p {}
+
+
+/* id selectors */
+
+#red {}
+
+#yellow {}
+
+
+/* class selectors *
+
+.clear {}
+
+.highlight {}
