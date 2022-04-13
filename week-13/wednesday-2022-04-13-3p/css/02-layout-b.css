@@ -1,0 +1,59 @@
+/* 02-layout-b.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header  header"
+    "nav     main"
+    "footer  footer";
+  grid-gap: 18px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 18px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+section {
+  background-color: #ddd;
+  padding: 18px;
+}
+
+#welcome {
+  grid-column: 1 / -1;
+}
+
+#coming-soon {
+  grid-row: 2;
+  grid-column: 2;
+}
